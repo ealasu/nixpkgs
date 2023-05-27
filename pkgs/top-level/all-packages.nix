@@ -33251,6 +33251,8 @@ with pkgs;
 
   openscad = libsForQt5.callPackage ../applications/graphics/openscad { };
 
+  openscad-latest = libsForQt5.callPackage ../applications/graphics/openscad/latest.nix { };
+
   open-stage-control = callPackage ../applications/audio/open-stage-control { };
 
   opentimestamps-client = python3Packages.callPackage ../tools/misc/opentimestamps-client { };
