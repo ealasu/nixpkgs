@@ -41,7 +41,7 @@
 
 mkDerivation rec {
   pname = "openscad";
-  version = "2023.05.24";
+  version = "20230524";
 
   src = fetchFromGitHub {
     owner = "openscad";
