@@ -11,6 +11,7 @@
 , curl
 , dbus
 , eigen
+, epoxy
 , expat
 , glew
 , glib
@@ -20,13 +21,21 @@
 , hicolor-icon-theme
 , ilmbase
 , libpng
+, libuuid
+, libselinux
+, libsepol
+, libthai
+, libdatrie
+, libxkbcommon
 , mpfr
 , nlopt
 , opencascade-occt
 , openvdb
 , pcre
+, pcre2
 , qhull
-, tbb
+#, tbb
+, tbb_2021_8
 , wxGTK31
 , xorg
 , fetchpatch
@@ -63,6 +72,7 @@ stdenv.mkDerivation rec {
     curl
     dbus
     eigen
+    epoxy
     expat
     glew
     glib
@@ -71,14 +81,24 @@ stdenv.mkDerivation rec {
     hicolor-icon-theme
     ilmbase
     libpng
+    libuuid
+    libselinux
+    libsepol
+    libthai
+    libdatrie
+    libxkbcommon
     mpfr
     nlopt
     opencascade-occt
     openvdb
     pcre
-    tbb
+    pcre2
+    #tbb
+    tbb_2021_8
     wxGTK-prusa
     xorg.libX11
+    xorg.libXdmcp
+    xorg.libXtst
   ] ++ lib.optionals withSystemd [
     systemd
   ] ++ nativeCheckInputs;
