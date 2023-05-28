@@ -468,6 +468,8 @@ self: super: with self; {
 
   androidtv = callPackage ../development/python-modules/androidtv { };
 
+  androidtvremote2 = callPackage ../development/python-modules/androidtvremote2 { };
+
   androguard = callPackage ../development/python-modules/androguard { };
 
   angr = callPackage ../development/python-modules/angr { };
@@ -4245,6 +4247,8 @@ self: super: with self; {
   google-reauth = callPackage ../development/python-modules/google-reauth { };
 
   google-resumable-media = callPackage ../development/python-modules/google-resumable-media { };
+
+  google-search-results = callPackage ../development/python-modules/google-search-results { };
 
   googletrans = callPackage ../development/python-modules/googletrans { };
 
@@ -12228,6 +12232,8 @@ self: super: with self; {
   tornado_5 = callPackage ../development/python-modules/tornado/5.nix { };
 
   torpy = callPackage ../development/python-modules/torpy { };
+
+  torrent_parser = callPackage ../development/python-modules/torrent_parser { };
 
   torrequest = callPackage ../development/python-modules/torrequest { };
 
